@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Session Recording</title>
+	<meta charset="utf-8">
+    <meta name="author" content="Abhinit Parelkar">
+    <meta name="description" content="Existing Observation Session Recording for the tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google's Material Design Framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+	<!-- Simple header with fixed tabs. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+  		<header class="mdl-layout__header ">
+
+    		<div class="mdl-layout__header-row">
+      			<!-- Title -->
+      			<span class="mdl-layout-title">Project: Company M: Session Recording</span>
+      			<div class="mdl-layout-spacer"></div>
+      			<span class="">
+      				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons mdl-button--accent">account_circle</i> 
+      				</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+  						<li class="mdl-menu__item">Welcome, user!</li>
+  						<li class="mdl-menu__item">Manage your account</li>
+  						<li disabled class="mdl-menu__item"><a href="index.html">Signout</a></li>
+					</ul>
+      			</span>
+
+    		</div>
+    		<!-- Bread crumbs -->
+    		<div class="mdl-layout__header-row">
+    		<nav class="mdl-navigation">
+        		<u><a class="mdl-navigation__link" href="Dashboard.html">Dashboard</a></u> >
+        		<u><a class="mdl-navigation__link" href="record.html">Company M</a></u> >
+        		<u><a class="mdl-navigation__link" href="">Recording Sessions</a></u>
+      		</nav>
+      	</div>
+  		</header>
+  		
+  		<main style="margin: 2% 2% 2% 2%" class="mdl-layout__content">
+  			<div class="mdl-grid">
+  				<!-- Left section -->
+  				<div class="mdl-cell mdl-cell--9-col">
+  					
+  					<div style="margin: 0% 0% 2% 0%">
+  						<i id="edit1" style="left: 0%; position: relative;" class="material-icons">mode_edit</i> <!--Edit-->
+        				<strong style="left: 5%; position: relative;">Owner:</strong> <!--Label-->
+        				<a style="left: 7%; position: relative;" class="mdl-navigation__link" href="">Abhinit</a>
+        				<i id="mic" style="left: 44%; position: relative;" class="material-icons">mic</i>
+        				<button style="left: 49.5%; position: relative;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  						<i class="material-icons">timer</i>Start timer
+						</button>
+						<i id="show/hide" style="left: 50%; position: relative;" class="material-icons">arrow_drop_down</i>
+						<i id="set" style="left: 50%; position: relative;" class="material-icons">settings</i>
+						<i style="left: 53%; position: relative;" class="material-icons">access_time</i>
+						<i style="left: 53%; position: relative;" class="material-icons">date_range</i>
+					</div>
+
+					<div style="margin: 0% 0% 2% 0%">
+  						<i id="edit2" style="left: 0%; position: relative;" class="material-icons">mode_edit</i>
+  						<strong style="left: 2.3%; position: relative;">Observing:</strong> <!--Label-->
+        				<a style="left: 4%; position: relative;" class="mdl-navigation__link" href="">Designer</a>
+        				<strong style="left: 49%; position: relative;">01h : 59m : 01s</strong>
+  					</div>
+
+  					<div style="margin: 0% 0% 4% 0%;">
+  						<form action="#">
+  							<div style="width: 98%;" class="mdl-textfield mdl-js-textfield">
+    							<textarea id="input" style="margin: 1%" class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+    							<div style="float: right;">
+    								<a id="note" class="mdl-list__item-secondary-action" href="#"><i class="material-icons">note_add</i></a>
+    								<i id="mic2" class="material-icons">mic</i>
+    								<i id="camera" class="material-icons">camera_alt</i>
+    								<i id="video" class="material-icons">videocam</i>
+    								<i id="brush" class="material-icons">brush</i>
+    							</div>
+    							<label class="mdl-textfield__label" for="sample5">Enter tags after double slash. E.g. //a //e. Press "tab" button on your keyboard to enter observations.<label>
+    						</div>
+						</form>
+  					</div>
+  					<div style="margin: 0% 0% 2% 0%;"> <!-- Session history -->
+  						<ul class="demo-list-two mdl-list">
+  							<li style="margin-bottom: 1%; background: #d7dde5;" class="mdl-list__item mdl-list__item--two-line mdl-shadow--2dp">
+    							<span class="mdl-list__item-primary-content">
+      								<span>The designer attended the meeting. Interacted with the device. Opened the software, <strong>#a</strong> <strong>#o</strong> <strong>#Morae</strong></span>
+      								<span class="mdl-list__item-sub-title">
+      									<i class="material-icons">audiotrack</i>
+      								</span>
+    							</span>
+    							<span class="mdl-list__item-secondary-content">
+      								<span class="mdl-list__item-secondary-info">
+      									<i class="material-icons">delete</i>
+      								  <i class="material-icons">mode_edit</i>
+      								</span>
+      								<span class="mdl-list__item-sub-title">
+      									<i style="left: 1%; position: relative;" class="material-icons">access_time</i>
+      									<i style="left: 1%; position: relative;" class="material-icons">date_range</i>
+      								</span>
+    							</span>
+  							</li>
+  							<li style="margin-bottom: 1%; background: #d7dde5;" class="mdl-list__item mdl-list__item--two-line mdl-shadow--2dp">
+    							<span class="mdl-list__item-primary-content">
+      								<span>The designer attended is analyzing data. He opened<strong>#SPSS</strong></span>
+      								<span class="mdl-list__item-sub-title">
+      									<i class="material-icons">image</i>      		
+      									<i class="material-icons">videocam</i>
+      								</span>
+    							</span>
+    							<span class="mdl-list__item-secondary-content">
+      								<span class="mdl-list__item-secondary-info">
+      									<i class="material-icons">delete</i>
+      									<i class="material-icons">mode_edit</i>
+      								</span>
+      								<span class="mdl-list__item-sub-title">
+      									<i class="material-icons">access_time</i>
+      									<i class="material-icons">date_range</i>
+      								</span>
+    							</span>
+  							</li>
+						</ul>
+  					</div>
+  				</div>
+  				<!-- Tags and Chat section -->
+  				<div class="mdl-cell mdl-cell--3-col">
+  					<div style="background: #d7dde5; height: 13%; padding: 2%; margin-bottom: 5%">
+  					<strong>AEIOU tags:</strong><br/>
+  						<button id="tag1" type="button" class="mdl-chip">
+    						<span class="mdl-chip__text">a</span>
+						</button>
+  						<button type="button" class="mdl-chip">
+    						<span class="mdl-chip__text">e</span>
+						</button>
+						<button type="button" class="mdl-chip">
+    						<span class="mdl-chip__text">i</span>
+						</button>
+						<button type="button" class="mdl-chip">
+    						<span class="mdl-chip__text">o</span>
+						</button>
+						<button type="button" class="mdl-chip">
+    						<span class="mdl-chip__text">u</span>
+						</button>
+					</div>
+					<div style="background: #d7dde5; height: 100%; padding: 2%; margin-bottom: 5%">
+						<strong>Custom tags:</strong>
+						<i id="edit3" style="float: right;" class="material-icons">mode_edit</i><br/>
+						<span id="tag2" class="mdl-chip mdl-chip--deletable">
+    						<span class="mdl-chip__text">SPSS</span>
+    						<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+						</span>
+						<span class="mdl-chip mdl-chip--deletable">
+    						<span class="mdl-chip__text">Morae</span>
+    						<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+						</span>
+					</div>
+					<div style="float: right;" class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">message</div>
+  				</div>
+  			</div>	
+  			<!--Tool tips-->
+  			<div class="mdl-tooltip" data-mdl-for="edit1">
+				Edit session ID
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="edit2"">
+				Edit observation subject name
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="mic"">
+				Start/stop audio recording for your observation
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="show/hide"">
+				Show/hide timer
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="set"">
+				Set the timer
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="input"">
+				Type your observations here
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="input"">
+				Type your observations here
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="note"">
+				Note-taking
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="mic2"">
+				Record audio in obervation
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="camera"">
+				Take a picture in observation
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="video"">
+				Record a video in observation
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="brush"">
+				Draw models in observation
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="tag1">
+				Click to add in observations
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="tag2">
+				Click to add in observations
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="edit3">
+				Edit custom tags
+			</div>
+  		</main>
+	</div>
+</body>
+</html>
